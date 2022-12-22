@@ -1,5 +1,5 @@
 {% set name = "premise" %}
-{% set version = "1.3.9" %}
+{% set version = "1.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f48baf7c507937aa3a3e1405629f6c7f667a2b072a5fc64769cd09408670095a
+  sha256: 97683b1701790a15b35ffc613b69e79a16ad54241f46541747c9baff2589da45
 
 build:
   noarch: python
@@ -42,7 +42,7 @@ test:
 
 about:
   home: https://premise.readthedocs.io
-  summary: 'Coupling IAM output to ecoinvent LCA database ecoinvent for prospective LCA'
+  summary: Coupling IAM output to ecoinvent LCA database ecoinvent for prospective LCA
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
