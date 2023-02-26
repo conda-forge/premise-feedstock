@@ -32,7 +32,8 @@ requirements:
     - python >=3.9,<3.11
     - pyyaml
     - schema
-    - sparse
+    # Somehow a really old sparse version is installed by default, this seems to solve this solver issue
+    - sparse !=0.3.1
     - wurst =0.3.3
     - xarray
 
