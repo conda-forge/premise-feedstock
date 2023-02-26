@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.9,<3.10
+    - python >=3.9,<3.11
     - setuptools
   run:
     - bw2data
@@ -29,11 +29,12 @@ requirements:
     - premise_gwp
     - prettytable
     - pycountry
-    - python >=3.9,<3.10
+    - python >=3.9,<3.11
     - pyyaml
     - schema
-    - sparse
-    - wurst
+    # Somehow a really old sparse version is installed by default, this seems to solve this solver issue
+    - sparse !=0.3.1
+    - wurst =0.3.3
     - xarray
 
 test:
