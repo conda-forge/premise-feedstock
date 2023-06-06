@@ -1,5 +1,5 @@
 {% set name = "premise" %}
-{% set version = "1.4.2" %}
+{% set version = "1.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4ef7aa902c330612a4cee814caffa5c17dad560bdca5d6257fd9d2380f32d959
+  sha256: e4be8d9ad51117ae60c04970fbce6063dd17b166f78c22b8c4af8455552cb829
 
 build:
   noarch: python
@@ -22,10 +22,11 @@ requirements:
   run:
     - bw2data
     - bw2io =0.8.7
+    - constructive_geometries >=0.8.2
     - cryptography
     - datapackage
     - numpy
-    - pandas
+    - pandas =1.5.3
     - premise_gwp
     - prettytable
     - pycountry
