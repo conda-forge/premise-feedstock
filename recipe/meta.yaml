@@ -20,6 +20,7 @@ requirements:
     - python >=3.9,<3.11
     - setuptools
   run:
+    - bottleneck
     - bw2data
     - bw2io =0.8.7
     - constructive_geometries >=0.8.2
