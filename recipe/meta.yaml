@@ -30,6 +30,7 @@ requirements:
     - pandas =1.5.3
     - premise_gwp
     - prettytable
+    - pyarrow
     - pycountry
     - python >=3.9,<3.11
     - pyyaml
