@@ -27,7 +27,7 @@ requirements:
     - cryptography
     - datapackage
     - numpy
-    - pandas =1.5.3
+    - pandas
     - premise_gwp
     - prettytable
     - pyarrow
@@ -37,7 +37,7 @@ requirements:
     - schema
     # Somehow a really old sparse version is installed by default, this seems to solve this solver issue
     - sparse !=0.3.1
-    - wurst =0.3.3
+    - wurst
     - xarray
 
 test:
