@@ -1,5 +1,5 @@
 {% set name = "premise" %}
-{% set version = "1.7.0" %}
+{% set version = "1.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 295165302fcc12a49de0ae240b98d5d5ce6d60e7eda41647c3235009ec83bafe
+  sha256: d1d00a7b74912d8fad11e5c80a13b7bb7b0e39e22b36d0188b9bfb3543a7f003
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
   run:
     - bottleneck
     - bw2data
-    - bw2io =0.8.7
+    - bw2io >=0.8.7,!=0.8.8
     - constructive_geometries >=0.8.2
     - cryptography
     - datapackage
