@@ -22,7 +22,7 @@ requirements:
   run:
     - bottleneck
     - bw2data
-    - bw2io =0.8.7
+    - bw2io =0.8.7,!=0.8.8
     - constructive_geometries >=0.8.2
     - cryptography
     - datapackage
