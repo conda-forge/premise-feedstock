@@ -1,5 +1,5 @@
 {% set name = "premise" %}
-{% set version = "1.7.1" %}
+{% set version = "1.7.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d1d00a7b74912d8fad11e5c80a13b7bb7b0e39e22b36d0188b9bfb3543a7f003
+  sha256: f9c9d3f3a4e78ff397a559afabc16151dec8bd303de3137414ba8d2cbde8e594
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
   run:
     - bottleneck
     - bw2data
-    - bw2io >=0.8.7,!=0.8.8
+    - bw2io >=0.8.10
     - constructive_geometries >=0.8.2
     - cryptography
     - datapackage
@@ -35,8 +35,7 @@ requirements:
     - python >=3.9,<3.11
     - pyyaml
     - schema
-    # Somehow a really old sparse version is installed by default, this seems to solve this solver issue
-    - sparse !=0.3.1
+    - sparse >=0.14.0
     - wurst
     - xarray
 
