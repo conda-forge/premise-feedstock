@@ -22,7 +22,7 @@ requirements:
   run:
     - bottleneck
     - bw2data
-    - bw2io >=0.8.7,!=0.8.8
+    - bw2io >=0.8.10
     - constructive_geometries >=0.8.2
     - cryptography
     - datapackage
@@ -35,8 +35,7 @@ requirements:
     - python >=3.9,<3.11
     - pyyaml
     - schema
-    # Somehow a really old sparse version is installed by default, this seems to solve this solver issue
-    - sparse !=0.3.1
+    - sparse >=0.14.0
     - wurst
     - xarray
 
