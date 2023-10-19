@@ -1,5 +1,5 @@
 {% set name = "premise" %}
-{% set version = "1.7.9" %}
+{% set version = "1.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f2ec538721d6a4fc8fcc0034933f2259ba5d8e2d0add7513d08a76fba4edc25a
+  sha256: f509ab0d27be63283ef71626124911733e759af3b7bbf23ee17ff834046f366e
 
 build:
   noarch: python
@@ -17,8 +17,8 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.9,<3.11
-    - setuptools
+    - python >=3.9,<3.12
+    - setuptools >=61.0
   run:
     - bottleneck
     - bw2data
@@ -33,7 +33,7 @@ requirements:
     - prettytable
     - pyarrow
     - pycountry
-    - python >=3.9,<3.11
+    - python >=3.9,<3.12
     - pyyaml
     - schema
     - sparse >=0.14.0
