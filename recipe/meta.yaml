@@ -17,8 +17,8 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.9,<3.11
-    - setuptools
+    - python >=3.9,<3.12
+    - setuptools >=61.0
   run:
     - bottleneck
     - bw2data
@@ -33,7 +33,7 @@ requirements:
     - prettytable
     - pyarrow
     - pycountry
-    - python >=3.9,<3.11
+    - python >=3.9,<3.12
     - pyyaml
     - schema
     - sparse >=0.14.0
