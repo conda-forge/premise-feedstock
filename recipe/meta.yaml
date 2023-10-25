@@ -35,6 +35,7 @@ requirements:
     - pycountry
     - python >=3.9,<3.12
     - pyyaml
+    - requests
     - schema
     - sparse >=0.14.0
     - wurst
