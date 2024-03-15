@@ -39,6 +39,7 @@ requirements:
     - schema
     - sparse >=0.14.0
     - tqdm
+    - unfold
     - wurst >=0.4
     - xarray
 
