@@ -1,5 +1,5 @@
 {% set name = "premise" %}
-{% set version = "2.1.0" %}
+{% set version = "2.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f554aed9ada0ccae27ae54adb420c5cdf4195fc865a105a42d58181387373b2d
+  sha256: 94d0dc3d229c63ccaa01ef1d889d2c46098bae508e83a0cdcb7618cfc0828cf2
 
 build:
   noarch: python
@@ -22,11 +22,11 @@ requirements:
   run:
     - bottleneck
     - bw2data
-    - bw2io >=0.8.10
+    - bw2io >=0.8.12
     - constructive_geometries >=0.9.5
     - cryptography
     - datapackage
-    - numpy
+    - numpy <2.0.0
     - pandas
     - platformdirs
     - premise_gwp
