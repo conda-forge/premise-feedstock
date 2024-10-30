@@ -41,7 +41,7 @@ requirements:
     - tqdm
     - unfold
     - wurst >=0.4
-    - xarray
+    - xarray <=2024.2.0
 
 test:
   imports:
