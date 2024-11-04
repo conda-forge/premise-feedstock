@@ -1,5 +1,5 @@
 {% set name = "premise" %}
-{% set version = "2.1.9" %}
+{% set version = "2.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a5f731d8661daf30b089982bd0a8f252bb8082138538097066372bc8d6284da9
+  sha256: 9d167ca88a9bcefbc9cbb15a0123485c3b7fd2756f57e0e527aa3668fbfcd082
 
 build:
   noarch: python
