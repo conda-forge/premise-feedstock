@@ -1,5 +1,6 @@
 {% set name = "premise" %}
 {% set version = "2.2.1" %}
+{% set python_min = python_min|default("3.10") %}
 
 package:
   name: {{ name|lower }}
@@ -17,7 +18,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.10,<3.12
+    - python {{ python_min }}.*
     - setuptools >=61.0
   run:
     - bottleneck
@@ -33,7 +34,7 @@ requirements:
     - prettytable
     - pyarrow
     - pycountry
-    - python >=3.10,<3.12
+    - python >={{ python_min }},<3.12
     - pyyaml
     - requests
     - schema
@@ -44,6 +45,8 @@ requirements:
     - xarray <=2024.2.0
 
 test:
+  requires:
+    - python ={{ python_min }}
   imports:
     - premise
 
