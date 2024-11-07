@@ -1,5 +1,6 @@
 {% set name = "premise" %}
-{% set version = "2.2.0" %}
+{% set version = "2.2.1" %}
+{% set python_min = python_min|default("3.10") %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9d167ca88a9bcefbc9cbb15a0123485c3b7fd2756f57e0e527aa3668fbfcd082
+  sha256: b43defc494d2c73d188bda2bd14654af4e44c35197dbc485399ddd25db837aaa
 
 build:
   noarch: python
@@ -17,7 +18,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.10,<3.12
+    - python {{ python_min }}.*
     - setuptools >=61.0
   run:
     - bottleneck
@@ -33,7 +34,7 @@ requirements:
     - prettytable
     - pyarrow
     - pycountry
-    - python >=3.10,<3.12
+    - python >={{ python_min }},<3.12
     - pyyaml
     - requests
     - schema
@@ -44,6 +45,8 @@ requirements:
     - xarray <=2024.2.0
 
 test:
+  requires:
+    - python ={{ python_min }}
   imports:
     - premise
 
