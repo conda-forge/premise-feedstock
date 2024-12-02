@@ -1,5 +1,5 @@
 {% set name = "premise" %}
-{% set version = "2.2.2" %}
+{% set version = "2.2.3" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: faf628a34d685d20abf4d1eb6ef8cf6651a740bb72764628714f093267800568
+  sha256: 3b37618183e2c9763169da86b407f3a76ff8cd53e8053184c99d23c1664cecab
 
 build:
   noarch: python
@@ -27,6 +27,7 @@ requirements:
     - constructive_geometries >=0.9.5
     - cryptography
     - datapackage
+    - ecoinvent_interface
     - numpy <2.0.0
     - pandas
     - platformdirs
