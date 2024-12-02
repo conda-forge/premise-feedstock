@@ -27,6 +27,7 @@ requirements:
     - constructive_geometries >=0.9.5
     - cryptography
     - datapackage
+    - ecoinvent_interface
     - numpy <2.0.0
     - pandas
     - platformdirs
