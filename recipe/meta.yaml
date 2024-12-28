@@ -19,11 +19,13 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
-    - setuptools >=61.0
+    - setuptools >=65.5
+    - wheel
   run:
     - bottleneck
-    - bw2data
-    - bw2io >=0.8.12
+    - bw2calc >=2.0.1
+    - bw2data >=4.3
+    - bw2io >=0.9.4
     - constructive_geometries >=0.9.5
     - cryptography
     - datapackage
