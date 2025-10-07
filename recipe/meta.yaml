@@ -1,5 +1,5 @@
 {% set name = "premise" %}
-{% set version = "2.2.9" %}
+{% set version = "2.3.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ead84abf00707ac97be5789330e6ba671dd3ea0f1dd7555f2c1304f69354ada6
+  sha256: e31afcb325871e711f914418dc896746875d1cfc73ae8a8bf85c701ce3cc82a3
 
 build:
   noarch: python
@@ -41,6 +41,7 @@ requirements:
     - pyyaml
     - requests
     - schema
+    - scipy <1.14.0
     - sparse >=0.14.0
     - tqdm
     - unfold
