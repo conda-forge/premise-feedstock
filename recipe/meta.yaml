@@ -41,6 +41,7 @@ requirements:
     - pyyaml
     - requests
     - schema
+    - scipy <1.14.0
     - sparse >=0.14.0
     - tqdm
     - unfold
