@@ -37,7 +37,7 @@ requirements:
     - prettytable
     - pyarrow
     - pycountry
-    - python >={{ python_min }},<3.12
+    - python >={{ python_min }}
     - pyyaml
     - requests
     - schema
