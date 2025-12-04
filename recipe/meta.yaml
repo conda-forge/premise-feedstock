@@ -1,5 +1,5 @@
 {% set name = "premise" %}
-{% set version = "2.3.2" %}
+{% set version = "2.3.3" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: dae0ac4feeb97b82a83e84fbe16a1ef3dbc757845a0f5672a4e3df1da41329dc
+  sha256: 3d7a89ab774098dc859876bc7b4635bc803d64005a808a2534dfd153d5b2f0ca
 
 build:
   noarch: python
