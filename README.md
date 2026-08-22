@@ -3,7 +3,7 @@ About premise-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/premise-feedstock/blob/main/LICENSE.txt)
 
-Home: https://premise.readthedocs.io
+Home: https://premise.readthedocs.io/
 
 Package license: BSD-3-Clause
 
@@ -11,7 +11,7 @@ Summary: Coupling IAM output to ecoinvent LCA database ecoinvent for prospective
 
 Development: https://github.com/polca/premise
 
-Documentation: https://premise.readthedocs.io
+Documentation: https://premise.readthedocs.io/
 
 Current build status
 ====================
