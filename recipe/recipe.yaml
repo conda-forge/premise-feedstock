@@ -55,6 +55,7 @@ tests:
         - "*"
       imports:
         - premise
+      pip_check: true
 
 about:
   homepage: https://premise.readthedocs.io
