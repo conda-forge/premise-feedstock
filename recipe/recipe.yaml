@@ -52,7 +52,6 @@ tests:
   - python:
       python_version:
         - ${{ python_min }}.*
-        - "*"
       imports:
         - premise
       pip_check: false
