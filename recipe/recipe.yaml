@@ -1,5 +1,5 @@
 context:
-  version: "2.5.2"
+  version: "2.5.4"
 
 package:
   name: premise
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/premise/premise-${{ version }}.tar.gz
-  sha256: bd2c93a443da9420cada96768bba9a58d89f64c3d121b6f22c4561f14e4f7714
+  sha256: c6cd9cd26eb399d84c3b79c2ef0202d8e159b7d2a6c23c6d6edfae0153d86a03
 
 build:
   noarch: python
